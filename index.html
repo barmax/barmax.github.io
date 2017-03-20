@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Барсуков Максим</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#tabs').tabs();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Обо мне</a></li>
+          <li class="resume"><a href="#tabs-2">Резюме</a></li>
+          <li><a href="#tabs-3">Портфолио</a></li>
+        </ul>
+        <div id="tabs-1">
+          <div class="info">
+            <img src="img/iam.jpg" alt="iam" width="512" height="512">
+            <div class="contact">
+              <h2>Максим Барсуков</h2>
+              <h4>Frontend разработчик</h4>
+                <p class="age">27 лет (16 февраля 1990 года)</p>
+                <p class="adress">Москва, м. Севастопольская</p>
+                <p class="phone">+7 999 710 10 42</p>
+                <p> <a href="mailto:maxim.barsukov@gmail.com">maxim.barsukov@gmail.com</a></p>
+              </ul>
+            </div>
+          </div>
+          <div class="skills">
+            <h3>Навыки</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SASS/Less</li>
+              <li>Bootstrap</li>
+              <li>Sceleton</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+          <div class="aboutme">
+            <h4>Обо мне</h4>
+            <p>В данный момент нахожусь в поиках вакансии frontend разработчика/верстальщика. Занимаюсь изучением связанных с вакансией технологий более года. Изучение самостоятельное и на курсах.<br>
+            Уверенный пользователь ПК - имею навык работы c 1С и различными операционными системами (Windows, Lunix Ubuntu, MacOs).</p>
+            <p>Хобби: книги, путешествия, походы, футбол (играю в любительской лиге).</p>
+          </div>
+        </div>
+        <div id="tabs-2">
+          <h3>Опыт работы <span>5,5 лет</span></h3>
+          <div class="buyer">
+            <h5>Менеджер по закупкам</h5>
+            <span>2013-2016</span>
+            <p><a href="https://icult.ru/" target="_blank">Интернет-магазин "iCult.ru"</a></p>
+            <ul>
+              <li>Налаживание связей и поиск поставщиков</li>
+              <li>Ценообразование</li>
+              <li>Оперативная закупка товаров</li>
+              <li>Добавление и приходование товаров в базу и на сайт</li>
+              <li>Контроль остатков</li>
+              <li>Администрирование группы Вконтакте</li>
+              <li>Администрирование сайта (добавление товара, описания, скрытие/удаление старых товаров)</li>
+            </ul>
+          </div>
+          <div class="logistics">
+            <h5>Руководитель службы доставки</h5>
+            <span>2012-2013</span>
+            <p><a href="https://icult.ru/" target="_blank">Интернет-магазин "iCult.ru"</a></p>
+            <ul>
+              <li>Управление 20 курьерами</li>
+              <li>Раздача заказов</li>
+              <li>Планирование маршрутов</li>
+              <li>Учет денежных средств</li>
+              <li>Контролирование выполнения поставленных задач</li>
+            </ul>
+          </div>
+          <div class="courier">
+            <h5>Курьер</h5>
+            <p><a href="https://icult.ru/" "target="_blank"">Интернет-магазин "iCult.ru"</a></p>
+            <span>2012</span>
+            <ul>
+              <li>Доставка заказов клиентам интернет-магазина</li>
+              <li>Консультирование клиентов на месте</li>
+              <li>Ежедневная отчетность доставленных заказов</li>
+              <li>Материальная ответственность</li>
+            </ul>
+          </div>
+          <div class="camp">
+            <h5>Специалист по организации досуга</h5>
+            <span>2011</span>
+            <p><a href="#">Детский оздоровительный лагерь "Березка"</a></p>
+            <ul>
+              <li>Организация  и проведение мероприятий (спортивные, культурно-массовые)</li>
+            </ul>
+          </div>
+          <h3>Образование</h3>
+          <div class="education">
+            <div class="univercity">
+              <h5>Владимирский государственный университет им. А.Г. и Н.Г. Столетовых, Владимир</h5>
+              <span>2007-2011</span>
+              <p>Факультет Философских и Социальных Наук</p>
+            </div>
+            <div class="cources">
+              <h5>Учебный центр "Специалист" при МГТУ им. Баумана, HTML-верстальщик</h5>
+              <span>2016</span>
+              <p>Курс HTML5 и CSS3</p>
+            </div>
+          </div>
+        </div>
+        <div id="tabs-3">
+          <a href="sites/bicycle/index.html" target="_blank"><figure>
+            <img src="img/bike.png" alt="bicycle" width="256" height="256">
+            <figcaption>AOD Bicycle</figcaption>
+          </figure></a>
+          <a href="sites/keks/index.html" target="_blank"><figure>
+            <img src="img/keks.png" alt="keks" width="256" height="256">
+            <figcaption>The Great Keksby</figcaption>
+          </figure></a>
+          <a href="sites/modus-versus/index.html" target="_blank"><figure>
+            <img src="img/modus.jpg" alt="modus-versus" width="256" height="256">
+            <figcaption>MODUSversus</figcaption>
+          </figure></a>
+          <a href="sites/nerds/index.html" target="_blank"><figure>
+            <img src="img/nerd.png" alt="nerds" width="256" height="256">
+            <figcaption>Nerds</figcaption>
+          </figure></a>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
