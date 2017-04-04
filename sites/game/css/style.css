@@ -45,7 +45,7 @@ header {
   height: 50px;
   background: url(../img/balloon.png) no-repeat center center;
   background-size: 100% auto;
-  transition: top 0.45s;
+  transition: top 0.4s;
   display: inline-block;
   position: relative;
   top: 100%;
