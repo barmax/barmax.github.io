@@ -149,3 +149,28 @@ h3 {
   color: black;
   font-size: 150%;
 }
+@media (max-width: 775px) {
+  .container {
+    min-width: 100%;
+    display: flex;
+    flex-flow: column;
+    font-size: 60%;
+  }
+  .age {
+    background-size: 7%;
+  }
+  .adress {
+    background-size: 7%;
+  }
+}
+@media (max-width: 415px) {
+
+  #tabs ul {
+    display: flex;
+    flex-flow: column;
+  }
+.mobile li a {
+    width: 100%;
+    text-align:  center;
+  }
+}
