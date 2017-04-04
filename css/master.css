@@ -120,7 +120,7 @@ h3 {
 /*TABS-3*/
 #tabs-3 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: row wrap;
 }
 #tabs-3 figure {
