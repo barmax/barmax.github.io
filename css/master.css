@@ -3,7 +3,8 @@ body {
   color: white;
 }
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 60%;
   margin-top: 7%;
   margin-bottom: 10%;
@@ -17,9 +18,9 @@ body {
   border: none;
 }
 #tabs ul li a{
-    margin: 0px;
-    cursor: pointer;
-    padding: 15px 40px;
+  margin: 0px;
+  cursor: pointer;
+  padding: 15px 40px;
 }
 .info img {
   width: 30%;
@@ -119,7 +120,7 @@ h3 {
 /*TABS-3*/
 #tabs-3 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row wrap;
 }
 #tabs-3 figure {

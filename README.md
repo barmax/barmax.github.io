@@ -1,2 +1,2 @@
-# barmax.github.io
-Сайт-резюме
+# resume
+it's my training with github
