@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e1e20;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.25; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+a:hover {
+  color: #d9cb9e;
+  transition: .3s ease; }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.header {
+  background-color: white;
+  color: #1e1e20;
+  margin-bottom: 15px; }
+  .header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; }
+  .header__nav {
+    background-color: #374140;
+    color: white; }
+
+.location {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+  color: #374140;
+  font-size: 1.1em;
+  text-align: right; }
+  .location__phone--number {
+    color: #dc3522;
+    font-size: 1.2em; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  padding: 10px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  text-align: center; }
+
+.item {
+  padding-bottom: 15px; }
+  .item__img {
+    float: left;
+    width: 10%; }
+
+.owl-carousel .owl-item img {
+  width: auto; }
+
+.carousel {
+  margin-bottom: 15px; }
+
+.carousel__slide {
+  position: relative; }
+  .carousel__slide--text {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    right: 35%;
+    bottom: 30%;
+    background-color: #d9cb9e;
+    color: #1e1e20;
+    font-size: 2em; }
+
+.owl-dots {
+  position: absolute;
+  left: 47%;
+  right: 47%;
+  z-index: 10;
+  bottom: 0; }
+
+.owl-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #d9cb9e;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 50%; }
+
+.owl-dot.active {
+  background-color: #374140; }
+
+.products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 15px; }
+
+.product__item {
+  background-image: url(../img/metal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 49.5%;
+  margin-bottom: 10px;
+  position: relative; }
+  .product__item:nth-child(2) {
+    background-image: url(../img/rezerv.jpg); }
+  .product__item:nth-child(3) {
+    background-image: url(../img/civil.jpg);
+    margin-bottom: 0; }
+  .product__item:last-child {
+    background-image: url(../img/mk.jpg);
+    margin-bottom: 0; }
+  .product__item--heading {
+    margin-top: 150px;
+    position: relative;
+    z-index: 10;
+    padding-left: 10px; }
+  .product__item--text {
+    position: relative;
+    z-index: 10;
+    padding-left: 10px;
+    padding-right: 30px; }
+  .product__item--btn {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    background-color: #d9cb9e;
+    color: #1e1e20;
+    padding: 5px 10px;
+    zoom: 2;
+    z-index: 11; }
+    .product__item--btn:hover {
+      background-color: #374140;
+      transition: .3s ease; }
+
+.product__item:hover::before {
+  background-image: -webkit-linear-gradient(top right, #d9cb9e 0%, rgba(255, 255, 255, 0) 80%);
+  background-image: -o-linear-gradient(top right, #d9cb9e 0%, rgba(255, 255, 255, 0) 80%);
+  background-image: linear-gradient(to top right, #d9cb9e 0%, rgba(255, 255, 255, 0) 80%);
+  opacity: 1; }
+
+.product__item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  -webkit-transition: background .3s;
+  -moz-transition: background .3s;
+  -ms-transition: background .3s;
+  -o-transition: background .3s;
+  transition: background .3s;
+  opacity: 0;
+  transition: opacity .5s;
+  box-sizing: border-box; }
+
+.advantages {
+  background-color: white;
+  color: #1e1e20;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 15px; }
+  .advantages__item {
+    width: 23%;
+    display: flex;
+    flex-direction: column; }
+    .advantages__item--bg {
+      padding-top: 50px;
+      margin-top: 10px;
+      background-image: url(../img/warehouse.svg);
+      background-repeat: no-repeat;
+      background-position: center top;
+      color: #d9cb9e; }
+    .advantages__item--heading {
+      margin-top: 0;
+      font-size: 1.5em;
+      margin-bottom: 10px; }
+    .advantages__item--text {
+      margin-top: 0; }
+    .advantages__item .btn {
+      margin-top: auto;
+      background-color: #374140;
+      color: white;
+      padding: 5px 8px;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      text-transform: uppercase; }
+      .advantages__item .btn:hover {
+        color: #d9cb9e;
+        transition: .3s ease; }
+
+.feedback {
+  background-color: white;
+  color: black;
+  margin-bottom: 15px; }
+
+.footer {
+  background-color: #374140;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .footer .about,
+  .footer .news,
+  .footer .goods,
+  .footer .contact {
+    width: 22%; }
+
+.about--heading,
+.news--heading,
+.good__heading,
+.contact__heading {
+  color: #d9cb9e;
+  font-size: 1.667em; }
+
+.about--text {
+  color: #949494; }
+
+.news__menu--item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 0; }
+  .news__menu--item:first-child {
+    padding-top: 0; }
+  .news__menu--item:last-child {
+    border-bottom: none; }
+.news__menu--date {
+  color: #949494; }
+
+.goods__menu--item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 0; }
+  .goods__menu--item:first-child {
+    padding-top: 0; }
+  .goods__menu--item:last-child {
+    border-bottom: none; }
+
+.contact__item {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857143;
+  font-size: 1.2em; }
+
+/*# sourceMappingURL=style.css.map */
