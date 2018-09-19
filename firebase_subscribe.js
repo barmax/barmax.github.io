@@ -48,7 +48,7 @@ function subscribe() {
 
 // отправка ID на сервер
 function sendTokenToServer(currentToken) {
-    if (isTokenSentToServer(currentToken)) {
+    if (!isTokenSentToServer(currentToken)) {
         console.log('Отправка токена на сервер...');
 
         var url = 'push.php'; // адрес скрипта на сервере который сохраняет ID устройства
